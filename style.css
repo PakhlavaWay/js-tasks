@@ -1,0 +1,22 @@
+/* ---------------------------- Part 2
+-- #2 */
+
+.red {
+  color: red;
+  font-size: 20px;
+}
+
+.green {
+  color: green;
+  font-size: 20px;
+}
+
+
+hr {
+  height: 2px;
+  background-color: seagreen;
+}
+
+.marginBottom {
+  margin-bottom: 50px;
+}
