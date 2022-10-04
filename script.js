@@ -2,109 +2,134 @@
 
 // -- #1
 
-// for (var i = 0; i < 10; i++) {
-//   setTimeout(function() {
-//     console.log(i);
-//   })
-// };
+console.log("--------------- #1");
+
+for (var i = 0; i < 10; i++) {
+  setTimeout(function() {
+    console.log(i);
+  })
+};
+console.log("Ответ: 10 (10 раз). Так как цикл завершит свою работу, а setTimeout запустится отложенно 10 раз.");
+
 
 // Ответ: 10 (10 раз). Так как цикл завершит свою работу, а setTimeout запустится отложенно 10 раз.
 
 // // -- #2
 
-// function displayCurrentDate() {
-//   const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"];
-//   const date = new Date();
-//   const today = date.getDay();
-//   const currentHours = date.toLocaleString('en-US', { hour: 'numeric', hour12: true }).split(" ").join("");
-//   const currentMinutes = date.getMinutes();
-//   const currentSeconds = date.getSeconds();
-  
-  
-//   return `
-//     Today is: ${weekday[today]}
-//     Current time is: ${currentHours}:${currentMinutes}:${currentSeconds}
-//   `
-// }
+console.log("--------------- #2");
 
-// console.log(displayCurrentDate());
+function displayCurrentDate() {
+  const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday"];
+  const date = new Date();
+  const today = date.getDay();
+  const currentHours = date.toLocaleString('en-US', { hour: 'numeric', hour12: true }).split(" ").join("");
+  const currentMinutes = date.getMinutes();
+  const currentSeconds = date.getSeconds();
+  
+  
+  return `
+    Today is: ${weekday[today]}
+    Current time is: ${currentHours}:${currentMinutes}:${currentSeconds}
+  `
+}
+
+console.log(displayCurrentDate());
 
 
 // -- #3
 
-// function reverseNumber(num) {
-//   let number = num.toString()
-//     .split("")
-//     .reverse()
-//     .join("");
+console.log("--------------- #3");
 
-//   return +number;
-// }
+function reverseNumber(num) {
+  let number = num.toString()
+    .split("")
+    .reverse()
+    .join("");
 
-// console.log(reverseNumber(344545));
+  return +number;
+}
+
+console.log(reverseNumber(344545));
 
 // -- #4
 
-// function calculateFactorial(number) {
-//   if (number === 0) return 1;
-//   return number * calculateFactorial(number - 1);
-// }
+console.log("--------------- #4");
 
-// console.log(calculateFactorial(3));
+function calculateFactorial(number) {
+  if (number === 0) return 1;
+  return number * calculateFactorial(number - 1);
+}
+
+console.log(calculateFactorial(3));
 
 // // -- #5
 
-// function displayLarge() {
-//   let firstNum = prompt("First Number: ");
-//   let secondNum = prompt("Second Number: ");
-  
-//   alert(firstNum > secondNum ? firstNum : secondNum);
-// }
+console.log("--------------- #5");
 
-// displayLarge();
+function displayLarge() {
+  let firstNum = prompt("First Number: ");
+  let secondNum = prompt("Second Number: ");
+  
+  alert(firstNum > secondNum ? firstNum : secondNum);
+  
+  console.log("*Выведен в alert")
+}
+
+displayLarge();
 
 // -- #6
 
-// function joinToString(array) {
-//   return array.join(", ");
-//   // return array.join("+"); 
-// }
+console.log("--------------- #6");
 
-// console.log(joinToString(["Red", "Green", "White", "Black"]));
+function joinToString(array) {
+  return array.join(", ");
+  // return array.join("+"); 
+}
+
+console.log(joinToString(["Red", "Green", "White", "Black"]));
+console.log(`return array.join("+") - *если Red+Green+White+Black`)
 
 // -- #7
 
-// function getMonthName(date) {
-//   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-//   return months[date.getMonth()];
-// }
+console.log("--------------- #7");
 
-// console.log(getMonthName(new Date("10/11/2009")));
+function getMonthName(date) {
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  return months[date.getMonth()];
+}
+
+console.log(getMonthName(new Date("10/11/2009")));
 
 
 // -- #8
 
-// function checkCase(word) {
-//   if (word[0] === word[0].toUpperCase()) return 'Uppercase';
-//   return 'Lowercase';
-// }
+console.log("--------------- #8");
 
-// console.log(checkCase("Neo"));
+function checkCase(word) {
+  if (word[0] === word[0].toUpperCase()) return 'Uppercase';
+  return 'Lowercase';
+}
+
+console.log(checkCase("Neo"));
 
 // -- #9
 
-// function drawSmile() {
-//   const smile = `
-//     ( ^ _ ^ )
-//   `
-//   return smile;
-// }
+console.log("--------------- #9");
 
-// console.log(drawSmile());
+function drawSmile() {
+  const smile = `
+    ( ^ _ ^ )
+  `
+  return smile;
+}
+
+console.log(drawSmile());
 
 // ---------------------------- Part 2
 
 // -- #1
+
+console.log("--------------- #1 (Part 2)");
 
 function displayTongueTwister() {
   const container = document.querySelector('.tongue-twister');
